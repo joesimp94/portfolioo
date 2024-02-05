@@ -2,11 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Homepage.module.css";
 import { Exo } from "next/font/google";
-import ProfilePic from "./ProfilePic.jpeg";
 
 const exo = Exo({ weight: "400", subsets: ["latin"] });
-
-const imageUrl = "../public/ProfilePic.jpg";
 
 export default function Home() {
   return (
@@ -34,8 +31,8 @@ export default function Home() {
         />
         <div className={styles.text}>
           <h1 className={exo.className}>
-            Hi! I'm Joe, a junior web developer based in the North West of
-            England.
+            Hi! I'm Joe, a Junior Software Developer based in the North West of
+            England. Please enjoy checking out my portfolio!
           </h1>
         </div>
       </div>
