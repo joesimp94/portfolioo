@@ -19,10 +19,83 @@
 body {
   color: rgb(var(--foreground-rgb));
   padding: 1rem;
+  color: #000000;
 }
-
+/* 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+.linkContainer {
+  display: inline-block;
+  position: relative;
+}
+
+.link {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 35px;
+  color: #000000;
+  transition: color 0.3s ease-in-out;
+  font-size: 45px;
+  z-index: 1;
+}
+
+.link:hover {
+  color: #348948;
+}
+
+.link:before,
+.link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #e8e8c4;
+  transition: width 0.3s ease-in-out;
+}
+
+.link::before {
+  top: 0;
+  left: 0;
+}
+
+.link::after {
+  bottom: 0;
+  right: 0;
+}
+
+.link:hover::before,
+.link:hover::after {
+  width: 100%;
+}
+
+.infoContainer {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.profilePic {
+  position: inherit;
+  top: -275px;
+  right: 320px;
+}
+
+.text {
+  font-size: 40px;
+  /* font-weight: bold; */
+  color: #000000;
+  max-width: 45%;
+  text-align: center;
+  padding: 0 20px;
 }
