@@ -75,6 +75,40 @@ body {
   width: 100%;
 }
 
+.homelink {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.homelink:hover {
+  color: #348948;
+}
+
+.homelink:before,
+.homelink::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #e8e8c4;
+  transition: width 0.3s ease-in-out;
+}
+
+.homelink::before {
+  top: 0;
+  left: 0;
+}
+
+.homelink::after {
+  bottom: 0;
+  right: 0;
+}
+
+.homelink:hover::before,
+.homelink:hover::after {
+  width: 100%;
+}
+
 .infoContainer {
   position: absolute;
   bottom: 50px;
@@ -86,16 +120,44 @@ body {
 }
 
 .profilePic {
-  position: inherit;
-  top: -275px;
-  right: 320px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
   font-size: 40px;
-  /* font-weight: bold; */
   color: #000000;
   max-width: 45%;
   text-align: center;
   padding: 0 20px;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.projectCard {
+  font-size: large;
+  width: 700px;
+  height: 700px;
+  text-align: center;
+  margin: 20px;
+  border: #348948 solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.projectImage {
+  width: 600px;
+  display: block;
 }
