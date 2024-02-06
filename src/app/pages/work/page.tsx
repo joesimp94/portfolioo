@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "@/app/components/Header";
 import Image from "next/image";
+import Footer from "@/app/components/Footer";
 
 type projectType = {
   title: string;
@@ -86,6 +87,7 @@ function MyWork() {
           );
         })}
       </div>
+      <Footer />
     </>
   );
 }

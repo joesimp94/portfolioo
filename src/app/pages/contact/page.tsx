@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 const ContactMe = () => {
   return (
@@ -7,8 +8,7 @@ const ContactMe = () => {
       <Header />
       <div className="contactOptions">
         <h1 className="text-5xl mt-10 flex justify-center">
-          Please get in touch via any of the options below! My inboxes are
-          always open.
+          Please get in touch via the links below! My inboxes are always open.
         </h1>
         <div className="iconWrapper flex flex-row justify-center mt-10">
           <div className="icon">
@@ -28,6 +28,7 @@ const ContactMe = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

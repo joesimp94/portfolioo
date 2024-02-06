@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import Image from "next/image";
+import Footer from "@/app/components/Footer";
 
 const AboutMe = () => {
   return (
@@ -28,6 +29,7 @@ const AboutMe = () => {
           className="profilePic rounded-lg m-5"
         />
       </div>
+      <Footer />
     </>
   );
 };
