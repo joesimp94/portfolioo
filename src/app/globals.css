@@ -161,3 +161,9 @@ body {
   width: 600px;
   display: block;
 }
+
+.icon img {
+  width: 300px;
+  height: auto;
+  margin: 40px;
+}
