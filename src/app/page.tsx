@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <>
-      <div className="linkContainer">
-        <div>
+      <Header />
+      <main className="h-[80vh]">
+        <div className="linkContainer">
           <Link href="./pages/about" className="link">
             About
           </Link>
@@ -16,15 +19,14 @@ export default function Home() {
             Contact
           </Link>
         </div>
-      </div>
-      <div className="infoContainer">
-        <div className="text">
-          <p>
+        <div className="infoContainer">
+          <p className="text">
             Hi! I'm Joe, a Junior Software Developer based in the North West of
             England. Please enjoy checking out my portfolio!
           </p>
         </div>
-      </div>
+      </main>
+      <Footer />
     </>
   );
 }
